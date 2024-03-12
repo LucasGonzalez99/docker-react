@@ -6,7 +6,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-
 FROM nginx
 
+#hola test
 COPY --from=builder /app/build /usr/share/nginx/html
